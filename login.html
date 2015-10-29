@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <!-- Include roboto.css to use the Roboto web font, material.css to include the theme and ripples.css to style the ripple effect -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/roboto.min.css" rel="stylesheet">
+        <link href="css/material.min.css" rel="stylesheet">
+        <link href="css/ripples.min.css" rel="stylesheet">
+        <link href="css/material-fullpalette.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link href="css/custome.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+      
+   
+        <div class="well page active col-md-6 cal-wrap frm-wrap animated bounceInDown"  style="display: block;">
+ <form class="form-horizontal">
+                                <fieldset>
+                                    <legend>Login</legend>
+                                    <div class="form-group">
+                                        <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                                        <div class="col-lg-10">
+                                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                                        <div class="col-lg-10">
+                                            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span>&nbsp;&nbsp;&nbsp;Keep me logged in 
+                                                </label>
+                                            </div>
+                                         
+                                        </div>
+                                    </div>
+                                  
+                                    <div class="form-group">
+                                        <div class="col-lg-10 col-lg-offset-2">
+                                            <a class="btn btn-primary"  id="btn-link">Login</a>
+                                             <br><a href="register.html" rel="register" class="linkform">You don't have an account yet? Register here</a><br><br>
+                                            <a href="forgot_password.html" rel="forgot_password" class="forgot linkform">Forgot your password?</a>
+                                        </div>
+                                        
+
+ 
+                                    </div>
+                                </fieldset>
+                            </form>
+
+            </div>
+             <!-- End container -->
+        </div>
+        <!-- Your site ends -->
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/ripples.min.js"></script>
+        <script src="js/material.min.js"></script>
+        <script src="js/custome.js"></script>
+        <script>
+
+    $('#btn-link').on('click' , function(){
+       $('.frm-wrap').addClass('animated zoomOutLeft').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $(this).removeClass('animated fadeIn');
+            window.location.href='Index.html';
+        });             
+    });
+                                                                  
+  
+  
+
+
+        </script>
+    </body>
+</html>
