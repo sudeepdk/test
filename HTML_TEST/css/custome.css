@@ -113,7 +113,7 @@ footer p{
 }
 @media only screen and (max-width: 640px)  {
 	.padd-row {
-	    padding: 15px 40px;
+	    padding: 15px 10px;
 	}
 	.pln-left {
 		padding: 0;
@@ -122,5 +122,22 @@ footer p{
 	.pnl-right {
 		padding-bottom: 10px;
 	}
+	.slider-wrap {
+		padding: 0 10px;
+	}
+	.nextbtn, .prevbtn {
+		top: 30%;
+		height: 50px;
+	}
+	.navi i {
+		font-size: 18px;
+	}
+	.nextbtn {
+		right: 10px;
+	}
+	.prevbtn {
+    	left: 10px;
+	}
+
 }
 
